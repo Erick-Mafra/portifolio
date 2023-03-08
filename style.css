@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+    background: rgb(87,137,206);
+    background: linear-gradient(198deg, rgba(87,137,206,1) 0%, rgba(43,74,121,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100em;
+}
+ul{
+    display: inline-flex;
+    list-style-type: none;
+}
+li{
+    margin: 0.9em;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    text-decoration-line:underline;
+}
+summary{
+    list-style: none;
+    list-style-type: none;
+    margin: 1em;
+    display: none;
+}
+nav{
+    display: inline;
+    padding: 0.5em;
+}
+header{
+    background-color:transparent;
+}
+h1{
+    align-self:center;
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 1px 3px 5px gray;
+}
+.mobile-menu{
+    display: none;
+}
+@media screen and (min-width: 0px)  and (max-width: 850px){
+    summary{
+        list-style: none;
+        list-style-type: none;
+        margin: 1em;
+        display: block;
+    }
+    .home{
+        margin:0 2px;    
+        justify-self: center;
+        width: 10vw;
+        height: 10vw;      
+    }
+    .person{
+        margin:0 2px;    
+        justify-self: center;
+        width: 10vw;
+        height: 10vw;      
+    }
+    nav{
+        display: none;
+    }
+    ul{
+        padding:10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        list-style-type: none;
+        justify-self: center;
+    }
+    li{
+        display:list-item;
+        margin:0 1em;
+        text-align: center;
+    }
+    h1{
+        color: white;
+        font-size: 1.5em;
+        text-shadow: 1px 3px 5px gray;
+        align-self: flex-end;
+        justify-self: center;
+    }
+    .photo{
+        object-fit: cover;
+        align-self: center;
+        width: 50%;
+        height: 50%;
+    }
+    .mobile-menu{
+        position:fixed;
+        bottom: 0;
+        color: white;
+        justify-items: center;
+        display: flex;
+        cursor: pointer;
+        width: 100%;
+        background-color: rgb(94, 209, 255);
+    }
+}
+.menu{
+    display: list-item;
+    cursor: pointer;
+    width: 100px;
+    
+}
+/* .menu > div{
+    background-color: blue;
+    width: 0.5em;
+    height: 0.1em;
+} */
+.c{
+    background-color: rgb(53, 53, 255);
+    width: 1.5em;
+    height: 0.25em;
+    margin-top: 0.3em;
+}
+.close{
+    margin-left: -0.5em;
+}
+/* .menu{
+    display: none;
+} */
+.photo{
+    object-fit: cover;
+    align-self: center;
+}
+.me{
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.sky img{
+ z-index: -1;
+}
